@@ -1,0 +1,191 @@
+/*CSS for admin side settings */
+
+/*----- Tabs -----*/ 
+.zestard-cookie-consent-tab { width:100%; } 
+
+/*----- Tab Links -----*/
+.zestard-cookie-consent-tab .tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.zestard-cookie-consent-tab .tab-links li {
+	margin:0px 0px;
+	float:left;
+	list-style:none;
+}
+
+.zestard-cookie-consent-tab .tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background:#e5e5e5;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+}
+
+.zestard-cookie-consent-tab .cookie-tab-list {
+	margin-right: 10px;
+}
+
+.wp-admin li a{
+	text-decoration: none;	
+}
+
+.zestard-cookie-consent-tab .tab-links a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+
+.zestard-cookie-consent-tab .tab-links li.active a, .zestard-cookie-consent-tab .tab-links li.active a:hover {
+	background:#fff;
+	color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.zestard-cookie-consent-tab .tab-content {
+	margin-bottom: 15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:#fff;
+	padding: 15px 15px 15px 15px;
+}
+
+.zestard-cookie-consent-tab #customise_tab {
+	display: none;
+}
+
+.zestard-cookie-consent-tab .tab .active {
+	display:block;
+}
+
+.zestard-cookie-consent-tab .tab-links{
+	margin-bottom: 0px;
+}
+
+.zestard-cookie-consent-tab #customise_tab .tab-content .tab .form-table .accept_btn_setting,
+.zestard-cookie-consent-tab #customise_tab .tab-content .tab .form-table .reject_btn_setting, 
+.zestard-cookie-consent-tab #customise_tab .tab-content .tab .form-table .read_more_setting
+{
+	display: none;
+}
+
+.zestard-cookie-consent-tab .form-table{
+	margin-top: 0px;
+}
+
+.zestard-cookie-consent-tab .form-table th {
+    padding: 2px 2px 2px 0; 
+}
+
+.zestard-cookie-consent-tab .form-table td{
+    padding: 8px 8px;
+}
+
+.zestard-cookie-consent-tab #customise_tab .tab-content .tab .form-table .read_more_setting .read_more_url input{
+	width: 50%;
+}
+
+label{
+	cursor: context-menu;
+}
+
+/*
+Start code
+Date : 22-07-2022
+Description : tab css 
+*/
+.zestard-cookie-consent-tab .tab-links {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 0;
+    line-height: inherit;
+    border-top: 0;
+}
+
+.zestard-cookie-consent-tab .tab-links li {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-left: 0.5em;
+    padding: 0;
+    background: #e5e5e5;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.zestard-cookie-consent-tab .tab-links li a {
+    color: #1d2327 !important;
+    line-height: 1.71428571;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 5px 10px;
+    margin-right: 0 !important;
+    background-color: #e5e5e5;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.zestard-cookie-consent-tab .tab-links li.active,
+.zestard-cookie-consent-tab .tab-links li:hover {
+    background-color: transparent !important;
+}
+
+.zestard-cookie-consent-tab .tab-links li.active a {
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
+    margin-bottom: -1px;
+    font-size: 14px;
+}
+.zestard-cookie-consent-tab .tab-links li:hover a {
+    background: #ffffff;
+    font-size: 14px;
+}
+.zestard-cookie-consent-tab .tab-links li:first-child {
+    margin-left: -1px;
+    position: relative;
+}
+.zestard-cookie-consent-tab .tab-links li:first-child a:before {
+    content: "";
+    height: 15px;
+    width: 1px;
+    background: #ccc;
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 100%;
+}
+
+/*
+End code
+Date : 22-07-2022
+Description : tab css 
+*/
+
+/* ======================================Media query============================================== */
+
+@media only screen and (min-width: 1200px) {
+  .zestard-cookie-consent-tab{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+	.zestard-cookie-consent-tab .form-table td{
+    	padding: 8px 0px;
+	}
+
+	.zestard-cookie-consent-tab .tab-content .tab .form-table select, .zestard-cookie-consent-tab .tab-content .tab .form-table .btn_txt input, .zestard-cookie-consent-tab .tab-content .tab .form-table .font_size input{
+		width: 50%;
+	}	
+
+	.zestard-cookie-consent-tab #customise_tab .tab-content .tab .form-table .read_more_setting .read_more_url input{
+	width: 70%;
+}
+}

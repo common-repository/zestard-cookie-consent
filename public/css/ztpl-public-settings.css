@@ -1,0 +1,27 @@
+/*Set styles for front side cookie bar and its btn*/
+
+/*Add cookie bar style*/
+#cookie_consent_bar {
+    margin: 0 auto;
+    padding: 13px 10px;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, .5) 0 5px 50px;
+    display: none;
+    left: 0;
+    font-weight: 300;
+}
+#cookie_consent_bar span {
+    margin-bottom: 5px;
+}
+/*Add style for cookie bar buttons*/
+#cookie_accept_btn, #cookie_reject_button, #cookie_read_more_button{
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 5px;
+    padding: 10px 16px 10px;
+    display: inline-block;
+}
